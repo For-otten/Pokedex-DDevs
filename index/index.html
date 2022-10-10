@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokédex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="../favicons/favicon-16x16-.ico">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <img src="../images/pokemon_logo.png" class="pokemonLogo">
+
+        <div class="allcontent">
+            <img src="../images/pokedex.png" alt="pokedex" class="pokedex">
+
+            <div class="closePopup"></div>
+
+
+            <img src='#' alt="pokemon" class="pokemon-image">
+
+            <h1 class="pokemon_data">
+                <span class="pokemon_number"></span> -
+                <span class="pokemon_name"></span>
+            </h1>
+
+            <form class="form">
+                <input type="search" class="input_search" placeholder="Name or Number" required>
+                <h3 class="insert">Pokemon: </h3>
+            </form>
+
+            <div class="buttonSearchBox">
+                <button class="searchBtn" )>Detalhes</button>
+            </div>
+
+
+            <div class="buttons">
+                <button class="button btn-prev">Prev</button>
+                <button class="button btn-next">Next</button>
+
+            </div>
+            <div class="popup">
+
+                <div class="x">X</div>
+
+                <div class="allPopupcontent">
+                    <div class="popupContent">
+                        <p class="Textopopup">Altura: </p>
+                        <p class="alturaPokemon"></p>
+                        <p class="infos">m</p>
+                    </div>
+                    <div class="popupContent">
+                        <p class="Textopopup">Tipo: </p>
+                        <p class="tipoPokemon"></p>
+                    </div>
+                    <div class="popupContent">
+                        <p class="Textopopup">Peso:</p>
+                        <p class="pesoPokemon"></p>
+                        <p class="infos">kg</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+    <script src='../js/script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background: rgb(253, 255, 0);
+    background: linear-gradient(180deg, rgba(253, 255, 0, 1) 0%, rgba(245, 49, 49, 0.7147233893557423) 100%);
+}
+
+
+main {
+    display: flex;
+    margin-top: 2%;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.allcontent{
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.pokedex {
+    width: 100%;
+    max-width: 900px;
+
+}
+
+
+.pokemon-image {
+    position: absolute;
+    bottom: 44%;
+    left: 16%;
+    width: 20%;
+    padding: 3% 5%;
+    max-width: 18%;
+    max-height: 38%;
+
+}
+
+.pokemonLogo{
+    width: 20%;
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 34%;
+    padding: 4%;
+    right: 12%;
+    font-size: clamp(5px, 2vw, 25px);
+}
+
+.pokemon_name {
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 23%;
+    top: 77.6%;
+    left: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+   
+ 
+}
+
+.input_search {
+    width: 100%;
+    padding: 12% 7%;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: clamp(4px, 1vw, 1rem);
+    box-shadow: -5px 9px 0 #000;
+    
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+    width: 35%;
+    transform: translate(-59%, 0);
+    display: flex;
+    gap: 10px;
+}
+
+.buttonSearchBox {
+    position: absolute;
+    bottom: 31%;
+    left: 58%;
+    width: 38%;
+
+}
+
+.searchBtn {
+    width: 30%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: clamp(6px, 1vw, 1rem);
+    color: white;
+    background-color: #444;
+    box-shadow: -1px 1px 0 #000;
+    cursor: pointer;
+    transition: 500ms;
+    width: 100%;
+}
+
+.searchBtn:active {
+    box-shadow: -1px 2px 0 #000;
+    font-size: 0.9rem;
+    transition: 80ms;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: clamp(4px, 2vw, 1rem);
+    color: white;
+    background-color: #444;
+    box-shadow: -4px 6px 0 #000;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.button:active {
+    box-shadow: -2px 3px 0 #000;
+    font-size: 0.9rem;
+    transition: 100ms;
+}
+
+
+.closePopup {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.popup {
+    background-color: #000;
+    border: 1px solid black;
+    height: 47%;
+    position: absolute;
+    bottom: 30%;
+    left: 5.2%;
+    width: 42%;
+    display: none;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+p {
+    color: #aaa;
+    font-size: clamp(4px, 4vw, 1rem);
+}
+
+.x {
+    color: white;
+    padding: 3%;
+    display: inline-block;
+    position: absolute;
+    right: 4%;
+    top: 1%;
+    cursor: pointer;
+    font-size: x-small;
+    background-color: red;
+    transition: 100ms;
+}
+
+.x:hover {
+    font-size: small;
+    transition: 100ms;
+}
+
+.allPopupcontent {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.popupContent {
+    display: flex;
+
+}
+
+.Textopopup {
+    margin: 0 5% 0 3%;
+}
+
+.tipoPokemon {
+    text-transform: capitalize;
+}
+
+.insert {
+    margin-bottom: 2%;
+    background-color: #333;
+    border-radius: 10px;
+    width: 75%;
+    box-shadow: -2px 2px 0 #000;
+    color: rgb(228, 218, 218);
+    font-size: clamp(3px, 2vw, 1rem);
+}
